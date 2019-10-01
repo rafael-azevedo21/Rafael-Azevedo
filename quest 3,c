@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int num[10];
+    int i, c=0;
+    int troca;
+    printf("Digite 10 números que serão impressos em ordem crescente \n");
+    for(i=0;i<10;i++){
+        printf("digite o %d número: ", i);
+        scanf("%d",&num[i] );
+    }
+        troca=num[0];
+    for(i=0;i<10;i++)
+    {
+        if(troca<num[i]){
+            troca=num[i];
+        }
+    }
+    printf("O maior número é: %d", troca);
+    return 0;
+}
